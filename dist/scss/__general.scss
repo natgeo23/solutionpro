@@ -1,0 +1,275 @@
+// ESTILOS PREDEFINIDOS A SELECTORES
+
+* {
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: $white;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+
+  &:hover {
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+// CLASES INDIVIDUALES
+
+.h1-title {
+  color: $white;
+  font-size: 28px;
+  font-weight: 900;
+  font-family: $primary-font;
+  line-height: 125%;
+  margin-bottom: 20px;
+  text-align: left;
+
+  @include desktop {
+    font-size: 48px;
+  }
+}
+
+.h2-title {
+  color: $primary-color;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: $primary-font;
+  line-height: 110%;
+  margin-bottom: 20px;
+
+  @include desktop {
+    font-size: 42px;
+    margin-bottom: 30px;
+  }
+}
+
+.h3-title {
+  color: $primary-color;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: $primary-font;
+  line-height: 110%;
+  margin-bottom: 15px;
+
+  @include desktop {
+    font-size: 24px;
+  }
+}
+
+.h4-title {
+  color: $white;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: $primary-font;
+  line-height: 120%;
+  margin-bottom: 20px;
+  margin-top: 30px;
+
+  @include desktop {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+  }
+}
+
+.h5-title {
+  color: $white;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: $primary-font;
+  line-height: 110%;
+  margin-bottom: 0;
+
+  @include desktop {
+    font-size: 32px;
+  }
+}
+
+.p-text {
+  color: #98A2B3;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: $secondary-font;
+  line-height: 135%;
+  margin-bottom: 20px;
+
+  @include desktop {
+    font-size: 20px;
+  }
+
+  &.white {
+    color: $white;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+}
+
+.check-text {
+  position: relative;
+
+  li {
+    list-style-type: none;
+    list-style-image: url('../../../src/assets/img/check-arrow.svg');
+    padding-left: 10px;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.btn-wrapper {
+  display: block;
+}
+
+.sharped-title {
+  color: $secondary-color;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: $special-font;
+  line-height: 110%;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-bottom: 20px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    border-radius: 50px;
+    width: 36.5px;
+    background: linear-gradient(to right, #FCDD04 0%, #ED2C1A 100%);
+  }
+
+  &.no-line {
+    padding-bottom: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @include desktop {
+    font-size: 24px;
+  }
+}
+
+
+.sharped-title,
+.p-text,
+.h5-title,
+.h4-title,
+.h3-title,
+.h2-title,
+.h1-title {
+  &.center {
+    text-align: center;
+  }
+
+  &.left {
+    text-align: left;
+  }
+
+  &.right {
+    text-align: right;
+  }
+}
+
+.btn_01 {
+  background: $secondary-color;
+  border-radius: 8px;
+  color: $white;
+  display: inline-block;
+  padding: 10px 15px;
+  transition: all 0.5s ease;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 110%;
+  width: 100%;
+  text-align: center;
+
+  @include desktop {
+    width: auto;
+  }
+
+  &:hover {
+    background: $primary-color;
+    cursor: pointer;
+  }
+}
+
+.btn_01--big {
+  background: $secondary-color;
+  border-radius: 8px;
+  color: $white;
+  display: inline-block;
+  padding: 15px 25px;
+  transition: all 0.5s ease;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 110%;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include desktop {
+    width: auto;
+    min-width: 400px;
+  }
+
+  &:hover {
+    background: $primary-color;
+    cursor: pointer;
+  }
+}
+
+.btn_02 {
+  background: $primary-color;
+  border: solid 2px $primary-color;
+  border-radius: 0px;
+  color: $white;
+  display: inline-block;
+  padding: 10px;
+  transition: all 0.5s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+
+  @include desktop {
+    width: auto;
+    font-size: 18px;
+  }
+
+  &:hover {
+    background: transparent;
+    border: solid 2px $primary-color;
+    color: $primary-color;
+  }
+}
+
+.dark-bg {
+  background-color: $primary-color;
+}
+
+.check-icon {
+  height: 12px;
+  width: auto;
+}

@@ -1,0 +1,91 @@
+// COLORES
+
+$primary-color: #140D4F;
+$secondary-color: #ED2C1A;
+$tertiary-color: #FCDD04;
+$special-color: #EAECF0;
+$black: #000000;
+$white: #ffffff;
+
+// TIPOGRAFIAS
+
+$primary-font: 'Quicksand', sans-serif;
+$secondary-font: 'Quicksand', sans-serif;
+$special-font: 'Permanent Marker', sans-serif;
+
+// MEDIDAS RESPONSIVE
+
+// Variables con las medidas de Bootstrap
+
+$sm: 575px;
+$md: 767px;
+$lg: 991px;
+$xl: 1199px;
+$xxl: 1400px;
+$mobile: 576px;
+$tablet: 768px;
+$desktop: 992px;
+$hd: 1200px;
+$fhd: 1500px;
+
+// Mixins utilizando las variables
+
+@mixin xs {
+  @media (max-width: $sm) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: $md) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: $lg) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: $xl) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (max-width: $xxl) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin hd {
+  @media (min-width: $hd) {
+    @content;
+  }
+}
+
+@mixin fhd {
+  @media (min-width: $fhd) {
+    @content;
+  }
+}
