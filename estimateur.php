@@ -1,5 +1,7 @@
 <?php
 include "src/includes/site-config.php";
+$page_title = "";
+$page_description = "";
 include "src/includes/head.php";
 ?>
 

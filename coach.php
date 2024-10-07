@@ -1,5 +1,7 @@
 <?php
 include "src/includes/site-config.php";
+$page_title = "My Sport Session Pro: Agenda et logiciel pour les coachs de Sport";
+$page_description = "Découvrez la solution complète pour les coachs sportifs. Gérez vos réservations, optimisez votre emploi du temps et augmentez vos revenus grâce à un outil adapté à vos besoins.";
 include "src/includes/head.php";
 ?>
 

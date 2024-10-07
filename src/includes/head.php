@@ -20,9 +20,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <?php echo $site_title; ?>
+        <?php echo $page_title; ?>
     </title>
-    <meta name="description" content="<?php echo $site_description; ?>">
+    <meta name="description" content="<?php echo $page_description; ?>">
     <meta name="keywords" content="<?php echo $site_keywords; ?>" />
     <meta name="robots" content="index" />
     <meta name="author" content="<?php echo $site_author; ?>" />

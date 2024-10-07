@@ -1,5 +1,7 @@
 <?php
 include "src/includes/site-config.php";
+$page_title = "My Sport Session Pro: Temoignages";
+$page_description = "Libérez vos journées et développez votre business avec My Sport Session. Temoignages";
 include "src/includes/head.php";
 ?>
 

@@ -1,5 +1,7 @@
 <?php
 include "src/includes/site-config.php";
+$page_title = "My Sport Session Pro: logiciel pour Associations de Sport & Loisirs.";
+$page_description = "Découvrez la solution complète pour les associations de Sport & Loisirs. Gérez vos réservations et optimisez votre emploi du temps grâce à un outil adapté à vos besoins.";
 include "src/includes/head.php";
 ?>
 
