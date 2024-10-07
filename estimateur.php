@@ -1,7 +1,7 @@
 <?php
 include "src/includes/site-config.php";
-$page_title = "";
-$page_description = "";
+$page_title = "Estimateur de rentabilité de My Sport Session | My Sport Session Pro";
+$page_description = "Estimez le temps et les revenus additionnels que vous pourriez gagner en utilisant My Sport Session, la solution de gestion pour les professionnels du sport et loisirs.";
 include "src/includes/head.php";
 ?>
 
