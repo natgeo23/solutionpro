@@ -2,6 +2,16 @@
 <html lang="fr">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E818FMC3LZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E818FMC3LZ');
+    </script>
+
     <!-- Datos estructurados -->
     <?php include "src/includes/structured-data.php"; ?>
 
@@ -70,5 +80,5 @@
     <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.css">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="dist/scss/css/main.min.css?v=10">
+    <link rel="stylesheet" href="dist/scss/css/main.min.css?v=15">
 </head>

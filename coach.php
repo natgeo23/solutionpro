@@ -102,7 +102,7 @@ include "src/includes/head.php";
                     <div class="col-lg-4">
                         <div class="stats__item">
                             <div class="stats__number" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="500">+ 100</div>
-                            <div class="stats__description" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">sport & loisirs référencés</div>
+                            <div class="stats__description" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">sports & loisirs référencés</div>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -212,7 +212,7 @@ include "src/includes/head.php";
                     <img src="src/assets/img/landing-coach/img-calendar-opportunites.png" alt="" class="info__img" data-aos="fade-right" data-aos-duration="500">
                 </div>
                 <div class="col-lg-6">
-                    <p class="sharped-title">Une journée, mille opportunité</p>
+                    <p class="sharped-title">Une journée, mille opportunités</p>
                     <h2 class="h2-title">Votre agenda se remplit sans effort</h2>
                     <p class="p-text">Libérez-vous des contraintes téléphoniques et offrez à vos clients la liberté de réserver leurs rendez-vous et de gérer leur emploi du temps en toute autonomie.</p>
                     <ul class="check-text my-4 my-lg-5">
@@ -238,7 +238,7 @@ include "src/includes/head.php";
                     <ul class="check-text my-4 my-lg-5">
                         <li class="p-text" data-aos="fade-right" data-aos-delay="200" data-aos-duration="500">Réservation depuis les réseaux sociaux et partenaires</li>
                         <li class="p-text" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">Gestion des réservations récurrentes</li>
-                        <li class="p-text" data-aos="fade-right" data-aos-delay="400" data-aos-duration="500">Gestion des plannings des coach du club</li>
+                        <li class="p-text" data-aos="fade-right" data-aos-delay="400" data-aos-duration="500">Gestion des plannings des coachs du club</li>
                         <li class="p-text" data-aos="fade-right" data-aos-delay="500" data-aos-duration="500">Plusieurs mode d’affichage du planning <br>
                             (mode agenda - mode liste - mode terrain)</li>
                     </ul>

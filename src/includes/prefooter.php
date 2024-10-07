@@ -39,7 +39,7 @@
                         <a class="footer__link">Gestion des cookies</a>
                     </p>
                     <p class="footer__text">
-                        <a href="estimateur" class="footer__link">Estimateur de rentabilié</a>
+                        <a href="estimateur" class="footer__link">Estimateur de rentabilité</a>
                     </p>
                 </div>
                 <div class="col-lg-3">

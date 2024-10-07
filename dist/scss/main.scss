@@ -1400,13 +1400,16 @@
         @include desktop {
             padding-bottom: 40px;
         }
+        .disclamer {
+            padding-top: 15px;
+            font-size: 11px;
+        }
     }
 
     &__box-position {
         margin-bottom: 0px;
 
         @include desktop {
-            position: sticky;
             top: 225px;
             margin-bottom: 35px;
             left: 0;

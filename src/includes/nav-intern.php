@@ -1,8 +1,11 @@
 <?php $currentPage = basename($_SERVER['SCRIPT_FILENAME']); ?>
 
+<!-- tag piwik -->
+<?php include "src/includes/tag-piwik.php"; ?>
+
 <nav class="nav navbar navbar-expand-lg">
     <div class="container">
-        <a class="navbar-brand order-lg-0 order-0" href="https://union-atlantica.com/nogooglebot/mss/">
+        <a class="navbar-brand order-lg-0 order-0" href="/">
             <img src="src/assets/img/logo-secondary.svg" alt="Logo" title="Logo" class="nav__logo" width="144" height="45">
         </a>
         <div class="collapse navbar-collapse justify-content-center order-lg-1 order-3" id="navbarNav">
@@ -12,7 +15,7 @@
                 ?>
 
                 <li class="nav-item nav__item <?= ($currentUrl === '') ? 'active' : '' ?>">
-                    <a class=" nav__link" href="https://union-atlantica.com/nogooglebot/mss/">
+                    <a class=" nav__link" href="/">
                         Vous êtes
                         <img src="src/assets/img/down-nav-arrow.svg" alt="" class="nav__link-arrow">
                     </a>

@@ -136,16 +136,18 @@ include "src/includes/head.php";
                                         </div>
                                         <div class="col-6">
                                             <h3 class="estimateur__num blur"><span id="additionalRevenue">000</span>€</h3>
-                                            <p class="estimateur__text center">de revenus supplémentaires par mois grâce à l’augmentation du taux de remplissage de 25%</p>
+                                            <p class="estimateur__text center">de revenus supplémentaires par mois grâce à My Sport Session</p>
                                         </div>
                                     </div>
                                 </div>
                                 <p class="estimateur__wrapper"><span class="estimateur__price blur">+ <span id="newClientsRevenue">000</span>€</span></p>
-                                <p class="estimateur__text big">grâce à l’apport de 3 nouveaux clients par mois</p>
+                                <p class="estimateur__text big">grâce à l’apport de 3 nouveaux clients en moyenne par mois</p>
                                 <p class="estimateur__wrapper"><span class="estimateur__price blur">+ <span id="noShowReductionRevenue">000</span>€</span></p>
-                                <p class="estimateur__text big">grâce à la diminution de 50% des réservations non honorées</p>
-                                <p class="btn-wrapper"><span id="openPopupButton" class="btn_01">Voir mes résultats</span></p>
+                                <p class="estimateur__text big">grâce à la diminution de 50% des réservations non honorées</p><p class="estimateur__wrapper"><span class="estimateur__price blur">+ <span id="improvementRate">000</span>€</span></p>
+                                <p class="estimateur__text big">grâce à l’augmentation du taux de remplissage de 25%</p>
+                                <p class="btn-wrapper"><span id="openPopupButton" class="btn_01">Voir mes résultats</span><a href="estimateur" id="Recalculer" class="btn_01 d-none">Recalculer *</a></p>
                             </div>
+                            <p class="text-center disclamer">* Estimations faites sur la base d’un échantillon de clubs collaborant avec My Sport Session.</p>
                         </div>
                     </section>
                 </div>
@@ -325,7 +327,9 @@ include "src/includes/head.php";
                     document.getElementById('additionalRevenue').innerText = data.additionalRevenue;
                     document.getElementById('newClientsRevenue').innerText = data.newClientsRevenue;
                     document.getElementById('noShowReductionRevenue').innerText = data.noShowReductionRevenue;
+                    document.getElementById('improvementRate').innerText = data.improvementRate;
                     document.getElementById('openPopupButton').classList.add('d-none');
+                    document.getElementById('Recalculer').classList.remove('d-none');
                     document.querySelectorAll('.estimateur__num.blur, .estimateur__price.blur').forEach(function(element) {
                         element.classList.remove('blur');
                     });

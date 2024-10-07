@@ -1,12 +1,12 @@
 <?php
 // Dominio del sitio web (debe ir sin / al final)
-$site_domain = "https://info.mysportsession.com";
+$site_domain = "https://www.tudominio.com";
 
 // Nombre del sitio web
 $site_name = "My Sport Session";
 
 // Autor del sitio web
-$site_author = "Unión Atlántica";
+$site_author = "Cabeza de Raton";
 
 // Título del sitio web
 $site_title = "My Sport Session";

@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $noShowReductionRevenue = round($montantMoyen * $noShows * 0.50 * 4, 2);
 
         // Mejora del Tasa de llenado (improvementRate)
-        $improvementRate = round(($montantMoyen * $prestationsParSemaine * $unitesParPrestation * (($tauxReservation / 100) * 4)) * 25, 2);
+        $improvementRate = round(($montantMoyen * $prestationsParSemaine * $unitesParPrestation * (($tauxReservation / 100) * 4) * 25), 2);
 
         // Total adicional (additionalRevenue)
         $additionalRevenue = round($newClientsRevenue + $noShowReductionRevenue + $improvementRate, 2);

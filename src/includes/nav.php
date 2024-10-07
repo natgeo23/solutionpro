@@ -1,8 +1,11 @@
 <?php $currentPage = basename($_SERVER['SCRIPT_FILENAME']); ?>
 
+<!-- tag piwik -->
+<?php include "src/includes/tag-piwik.php"; ?>
+
 <nav class="nav navbar navbar-expand-lg">
     <div class="container">
-        <a class="navbar-brand order-lg-0 order-0" href="https://union-atlantica.com/nogooglebot/mss/">
+        <a class="navbar-brand order-lg-0 order-0" href="/">
             <img src="src/assets/img/logo.svg" alt="Logo" title="Logo" class="nav__logo d-none d-lg-block" width="189" height="45">
             <img src="src/assets/img/logo-secondary.svg" alt="Logo" title="Logo" class="nav__logo d-lg-none" width="147" height="35">
         </a>
