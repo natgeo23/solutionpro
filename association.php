@@ -27,7 +27,7 @@ include "src/includes/head.php";
             <img src="src/assets/img/landing-coach/scroll-down-icon.svg" alt="" class="heroshot__scroll-down-icon">
         </div>
         <div class="container">
-            <div class="heroshot__content">
+            <div class="heroshot__content" id="decouvrir-gratuitement">
                 <div class="row justify-content-between">
                     <div class="col-lg-5">
                         <h1 class="h1-title left big">Le logiciel pensé pour les associations</h1>
@@ -39,7 +39,7 @@ include "src/includes/head.php";
                         </ul>
                     </div>
                     <div class="col-lg-7 col-xl-5 align-self-center">
-                        <article class="form" id="decouvrir-gratuitement">
+                        <article class="form">
                             <div class="container">
                                 <div id="the-form">
                                     <h2 class="h2-title center">Vous êtes une association de sport & loisirs ?</h2>
