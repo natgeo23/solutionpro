@@ -20,7 +20,7 @@
 
 
     <script>
-        // https://docs.google.com/spreadsheets/d/1lEmfDEpm7AzG3n6p2RO3CUkS8jk5WKpNMt7CJdYbW7A/edit?usp=sharing
+        // https://docs.google.com/spreadsheets/d/1TqYGMUOoC3wzOou1TLuGGNnWWGfrRIEba6M2IZjcMeo/edit?usp=sharing
         const scriptURL1 = 'https://script.google.com/macros/s/AKfycbyF9fzn6NUGLcf2ABctVlEdC7uEHSigyU3hj48oRqTktDxcfNTWsSAmstNRvdaa0ntpNQ/exec';
         const form1 = document.forms['registro'];
         const btnTxt1 = form1.querySelector('[type=submit]').value;

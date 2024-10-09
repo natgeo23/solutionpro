@@ -216,7 +216,8 @@ include "src/includes/head.php";
     </div>
 
     <script>
-        const scriptURL1 = 'https://script.google.com/macros/s/AKfycbwHu_8G4RA5DH2xOeBIM0ZkhNz162US0cPW6KfX_vxrQSN4e3jV1_FqRzNmTd09cqLBhA/exec';
+        // https://docs.google.com/spreadsheets/d/1TqYGMUOoC3wzOou1TLuGGNnWWGfrRIEba6M2IZjcMeo/edit?usp=sharing
+        const scriptURL1 = 'https://script.google.com/macros/s/AKfycbyF9fzn6NUGLcf2ABctVlEdC7uEHSigyU3hj48oRqTktDxcfNTWsSAmstNRvdaa0ntpNQ/exec';
         const form1 = document.forms['registro'];
         const btnTxt1 = form1.querySelector('[type=submit]').value;
 
