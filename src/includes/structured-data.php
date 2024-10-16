@@ -22,11 +22,11 @@
             "@id": "<?php echo $site_domain; ?>#organization",
             "name": "<?php echo $site_name; ?>",
             "url": "<?php echo $site_domain; ?>",
-            "logo": "<?php echo $site_domain; ?>/path-to-logo.jpg", // URL del logo del sitio
+            "logo": "<?php echo $site_domain; ?>/src/assets/img/logo.svg", // URL del logo del sitio
             "sameAs": [
-                "https://www.facebook.com/yourpage",
-                "https://www.instagram.com/yourpage",
-                "https://www.linkedin.com/in/yourpage"
+                "https://www.facebook.com/p/My-Sport-Session-100063915368745/?paipv=0&eav=AfabQD7kWbZ4tYa5Rz16jgckH9xI0tR2i87Af4iN6qhczecDuW0DDYV006pELq7-A0E&_rdr",
+                "https://www.instagram.com/mysportsession/",
+                "https://www.linkedin.com/company/my-sport-session/"
             ]
         },
         {
@@ -40,7 +40,7 @@
             "description": "Gagnez en visibilité et optimisez la gestion de vos réservations avec My Sport Session.",
             "areaServed": {
                 "@type": "Place",
-                "name": "France" // Puedes ajustar el área según corresponda
+                "name": "France"
             },
             "keywords": [
                 "Gestion de réservations",
