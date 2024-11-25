@@ -298,7 +298,7 @@ a:hover {
 }
 @media (min-width: 992px) {
   .nav.sticky {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(200, 200, 200, 0.6);
   }
 }
 .nav.sticky .nav__logo {

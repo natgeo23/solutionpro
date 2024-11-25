@@ -20,7 +20,7 @@
     &.sticky {
 
         @include desktop {
-            background: rgba($white, 0.6);
+            background: rgba(200,200,200, 0.6);
         }
 
         padding: 10px 0 !important;

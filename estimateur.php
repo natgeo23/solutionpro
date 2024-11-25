@@ -48,7 +48,8 @@ include "src/includes/head.php";
                             <h2 class="h2-title">Quel est le prix moyen de votre
                                 offre/activité principale?</h2>
                             <label for="montant-moyen" class="estimateur__label">Montant moyen</label>
-                            <input type="number" id="montant-moyen" name="montant-moyen" required placeholder="Entrer un montant">
+                            <input type="number" id="montant-moyen" name="montant-moyen" required placeholder="Entrer un montant" min="1">
+                            <span class="error-message" id="montant-moyen-error"></span>
                             <article class="estimateur__alert" data-aos="zoom-out" data-aos-duration="500">
                                 <div class="row align-items-top g-0">
                                     <div class="col-auto">
@@ -63,7 +64,8 @@ include "src/includes/head.php";
                         <section class="estimateur__item">
                             <h2 class="h2-title">Combien de prestations sont disponibles à la réservation chaque semaine dans votre établissement?</h2>
                             <label for="prestations-proposees-par-semaine-etablissement" class="estimateur__label">Prestations proposées par semaine</label>
-                            <input type="number" id="prestations-proposees-par-semaine-etablissement" name="prestations-proposees-par-semaine-etablissement" required placeholder="Entrer un nombre">
+                            <input type="number" id="prestations-proposees-par-semaine-etablissement" name="prestations-proposees-par-semaine-etablissement" required placeholder="Entrer un nombre" min="1">
+                            <span class="error-message" id="prestations-proposees-par-semaine-etablissement-error"></span>
                             <article class="estimateur__alert" data-aos="zoom-out" data-aos-duration="500">
                                 <div class="row align-items-top g-0">
                                     <div class="col-auto">
@@ -78,7 +80,8 @@ include "src/includes/head.php";
                         <section class="estimateur__item">
                             <h2 class="h2-title">Combien d'unités (places, entrées, terrains, matériels, etc.) sont disponibles à la réservation en moyenne pour chaque prestation?</h2>
                             <label for="prestations-proposees-par-semaine-event" class="estimateur__label">Unités disponibles par prestation</label>
-                            <input type="number" id="prestations-proposees-par-semaine-event" name="prestations-proposees-par-semaine-event" required placeholder="Entrer un nombre">
+                            <input type="number" id="prestations-proposees-par-semaine-event" name="prestations-proposees-par-semaine-event" required placeholder="Entrer un nombre" min="1">
+                            <span class="error-message" id="prestations-proposees-par-semaine-event-error"></span>
                             <article class="estimateur__alert" data-aos="zoom-out" data-aos-duration="500">
                                 <div class="row align-items-top g-0">
                                     <div class="col-auto">
@@ -93,7 +96,8 @@ include "src/includes/head.php";
                         <section class="estimateur__item">
                             <h2 class="h2-title">Quel est le taux de réservation (occupation) moyen de vos prestations?</h2>
                             <label for="taux-de-resevation" class="estimateur__label">Taux de résevation</label>
-                            <input type="number" id="taux-de-resevation" name="taux-de-resevation" required placeholder="Entrer un nombre en %" min="0" max="100">
+                            <input type="number" id="taux-de-resevation" name="taux-de-resevation" required placeholder="Entrer un nombre en %" min="1" max="100">
+                            <span class="error-message" id="taux-de-resevation-error"></span>
                             <article class="estimateur__alert" data-aos="zoom-out" data-aos-duration="500">
                                 <div class="row align-items-top g-0">
                                     <div class="col-auto">
@@ -109,7 +113,8 @@ include "src/includes/head.php";
                         <section class="estimateur__item">
                             <h2 class="h2-title">Combien de réservations non honorées (no shows) avez-vous par semaine?</h2>
                             <label for="creneaux-proposes-par-semaine" class="estimateur__label">Créneaux proposés par semaine</label>
-                            <input type="number" id="creneaux-proposes-par-semaine" name="creneaux-proposes-par-semaine" required placeholder="Entrer un nombre">
+                            <input type="number" id="creneaux-proposes-par-semaine" name="creneaux-proposes-par-semaine" required placeholder="Entrer un nombre" min="1">
+                            <span class="error-message" id="creneaux-proposes-par-semaine-error"></span>
                             <article class="estimateur__alert" data-aos="zoom-out" data-aos-duration="500">
                                 <div class="row align-items-top g-0">
                                     <div class="col-auto">
@@ -215,6 +220,14 @@ include "src/includes/head.php";
         </div>
     </div>
 
+    <style>
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 0.2em;
+        }
+    </style>
+
     <script>
         // https://docs.google.com/spreadsheets/d/1TqYGMUOoC3wzOou1TLuGGNnWWGfrRIEba6M2IZjcMeo/edit?usp=sharing
         const scriptURL1 = 'https://script.google.com/macros/s/AKfycbyF9fzn6NUGLcf2ABctVlEdC7uEHSigyU3hj48oRqTktDxcfNTWsSAmstNRvdaa0ntpNQ/exec';
@@ -226,33 +239,13 @@ include "src/includes/head.php";
             let isValid = true;
 
             // Validate each field
-            const fields = [{
-                    id: 'name',
-                    message: 'Veuillez entrer votre prénom.'
-                },
-                {
-                    id: 'lastname',
-                    message: 'Veuillez entrer votre nom.'
-                },
-                {
-                    id: 'postalcode',
-                    message: 'Veuillez entrer un code postal valide à 5 chiffres.',
-                    pattern: /^\d{5}$/
-                },
-                {
-                    id: 'phone',
-                    message: 'Veuillez entrer votre numéro de téléphone.'
-                },
-                {
-                    id: 'email',
-                    message: 'Veuillez entrer une adresse e-mail valide.',
-                    type: 'email'
-                },
-                {
-                    id: 'dataPolicyCheckbox',
-                    message: 'Vous devez accepter les conditions.',
-                    type: 'checkbox'
-                }
+            const fields = [
+                { id: 'name', message: 'Veuillez entrer votre prénom.' },
+                { id: 'lastname', message: 'Veuillez entrer votre nom.' },
+                { id: 'postalcode', message: 'Veuillez entrer un code postal valide à 5 chiffres.', pattern: /^\d{5}$/ },
+                { id: 'phone', message: 'Veuillez entrer votre numéro de téléphone.' },
+                { id: 'email', message: 'Veuillez entrer une adresse e-mail valide.', type: 'email' },
+                { id: 'dataPolicyCheckbox', message: 'Vous devez accepter les conditions.', type: 'checkbox' }
             ];
 
             // Clear previous error messages
@@ -345,30 +338,89 @@ include "src/includes/head.php";
         }
 
         document.getElementById('openPopupButton').addEventListener('click', function(event) {
-            // Prevenir la apertura del popup inicialmente
             event.preventDefault();
 
-            // Obtener el formulario y sus campos
             const form = document.getElementById('estimateurForm');
-            const fields = form.querySelectorAll('input, select');
             let isValid = true;
 
-            // Validar cada campo
-            fields.forEach(function(field) {
-                if (!field.value.trim()) {
+            const errorMessages = form.querySelectorAll('.error-message');
+            errorMessages.forEach(function(msg) {
+                msg.remove();
+            });
+
+            const fieldsToValidate = [
+                {
+                    id: 'votre-offre',
+                    message: 'Veuillez sélectionner une option.'
+                },
+                {
+                    id: 'montant-moyen',
+                    message: 'Veuillez indiquer un chiffre supérieur à 0.',
+                    minValue: 1
+                },
+                {
+                    id: 'prestations-proposees-par-semaine-etablissement',
+                    message: 'Veuillez indiquer un chiffre supérieur à 0.',
+                    minValue: 1
+                },
+                {
+                    id: 'prestations-proposees-par-semaine-event',
+                    message: 'Veuillez indiquer un chiffre supérieur à 0.',
+                    minValue: 1
+                },
+                {
+                    id: 'taux-de-resevation',
+                    message: 'Veuillez indiquer un chiffre entre 1 et 100.',
+                    minValue: 1,
+                    maxValue: 100
+                },
+                {
+                    id: 'creneaux-proposes-par-semaine',
+                    message: 'Veuillez indiquer un chiffre supérieur à 0.',
+                    minValue: 1
+                }
+            ];
+
+            fieldsToValidate.forEach(function(field) {
+                const input = document.getElementById(field.id);
+                let value = input.value.trim();
+                let parentElement = input.parentNode;
+
+                // Eliminar cualquier mensaje de error existente
+                const existingError = parentElement.querySelector('.error-message');
+                if (existingError) {
+                    existingError.remove();
+                }
+
+                if (!value) {
                     isValid = false;
-                    // Puedes añadir mensajes de error aquí si deseas
-                    // Ejemplo: field.classList.add('error');
+                    const errorElement = document.createElement('span');
+                    errorElement.classList.add('error-message');
+                    errorElement.textContent = field.message;
+                    parentElement.appendChild(errorElement);
+                } else if (input.type === 'number') {
+                    let numericValue = parseFloat(value);
+                    if (isNaN(numericValue) || (field.minValue && numericValue < field.minValue) || (field.maxValue && numericValue > field.maxValue)) {
+                        isValid = false;
+                        const errorElement = document.createElement('span');
+                        errorElement.classList.add('error-message');
+                        errorElement.textContent = field.message;
+                        parentElement.appendChild(errorElement);
+                    }
+                } else if (input.tagName.toLowerCase() === 'select' && input.selectedIndex === 0) {
+                    isValid = false;
+                    const errorElement = document.createElement('span');
+                    errorElement.classList.add('error-message');
+                    errorElement.textContent = field.message;
+                    parentElement.appendChild(errorElement);
                 }
             });
 
-            // Si el formulario es válido, abrir el popup
             if (isValid) {
-                // Trigger Bootstrap modal manually
                 const modal = new bootstrap.Modal(document.getElementById('results-popup'));
                 modal.show();
             } else {
-                alert('Veuillez compléter tous les champs avant de continuer.');
+                alert('Veuillez corriger les erreurs avant de continuer.');
             }
         });
     </script>
